@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QR Code Scanner Android</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="details_header">Drawing Details</string>
+    <string name="details_error">No Data! Scan Again</string>
+    <!--<string name="details_header">Drawing Details</string>-->
+    <!--<string name="details_header">Drawing Details</string>-->
+
+</resources>
