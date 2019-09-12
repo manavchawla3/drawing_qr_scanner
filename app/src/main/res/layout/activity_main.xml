@@ -18,7 +18,7 @@
         android:layout_marginRight="@dimen/mtrl_card_spacing"
         android:clickable="true"
         android:focusable="true"
-        android:minHeight="500dp"
+        android:minHeight="400dp"
         app:contentPadding="20dp">
 
 
