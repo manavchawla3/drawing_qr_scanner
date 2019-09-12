@@ -1,4 +1,4 @@
-package com.codetoart.android.qrcodescannerandroid
+package com.zetwerk.android.qrcodescannerandroid
 
 import android.content.Intent
 import android.os.Bundle

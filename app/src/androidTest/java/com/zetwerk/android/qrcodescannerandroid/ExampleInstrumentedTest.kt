@@ -1,4 +1,4 @@
-package com.codetoart.android.qrcodescannerandroid
+package com.zetwerk.android.qrcodescannerandroid
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
