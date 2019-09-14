@@ -1,136 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawing_details"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
 
     <LinearLayout
+        android:id="@+id/drawing_details"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <TextView
-            style="@style/TextAppearance.MaterialComponents.Headline5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/details_header" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
-
-        <GridLayout
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/contract_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:orientation="vertical">
+                android:text="CN355"
+                android:textColor="#262626"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contract_id"
+                android:paddingTop="8px"
+                android:text="Supply of Technological Structures of Orissa"
+                android:textColor="#757575" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/od535"
+                android:textColor="#262626"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_id"
+                android:paddingTop="8dp"
+                android:text="@string/structure_supply"
+                android:textColor="#757575" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <TextView
-                    style="@style/TextAppearance.MaterialComponents.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="15sp" />
+                    android:text="@string/drawing_number"
+                    android:textColor="#757575" />
+
 
                 <TextView
                     android:id="@+id/drawing_no"
-                    style="@style/TextAppearance.MaterialComponents.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="20sp" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:orientation="vertical">
+                android:layout_marginTop="20dp">
 
                 <TextView
-                    style="@style/TextAppearance.MaterialComponents.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="15sp" />
+                    android:text="@string/received_date"
+                    android:textColor="#757575" />
+
+
+                <TextView
+                    android:id="@+id/received_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity"
+                    android:textColor="#757575" />
+
 
                 <TextView
                     android:id="@+id/quantity"
-                    style="@style/TextAppearance.MaterialComponents.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="20sp" />
+                    android:layout_alignParentRight="true"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-        </GridLayout>
-
-
-        <GridLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:orientation="vertical">
+                android:layout_marginTop="20dp">
 
                 <TextView
-                    style="@style/TextAppearance.MaterialComponents.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="15sp" />
+                    android:text="@string/unit"
+                    android:textColor="#757575" />
+
 
                 <TextView
                     android:id="@+id/unit"
-                    style="@style/TextAppearance.MaterialComponents.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="20sp" />
+                    android:layout_alignParentRight="true"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/download_file"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:orientation="vertical">
-
-
-                <TextView
-                    style="@style/TextAppearance.MaterialComponents.Caption"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="15sp" />
+                android:background="#D0E8E0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
 
                 <TextView
-                    android:id="@+id/received_on"
-                    style="@style/TextAppearance.MaterialComponents.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/details_header"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </GridLayout>
-
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="@string/download_drawing"
+                    android:textColor="#27B272"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+            </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
-
-
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

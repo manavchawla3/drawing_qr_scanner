@@ -1,8 +1,22 @@
 <resources>
-    <string name="app_name">QR Code Scanner Android</string>
+    <string name="app_name">ZetScanner</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="details_header">Drawing Details</string>
     <string name="details_error">No Data! Scan Again</string>
+    <string name="no_internet">No Internet Available!</string>
+    <string name="pdf_unprocessed">Unprocessed</string>
+    <string name="pdf_processed">Processed</string>
+    <string name="drawing_no">Drawing No.</string>
+    <string name="unit">Unit</string>
+    <string name="received_on">received On</string>
+    <string name="download">Download</string>
+    <string name="status">Status</string>
+    <string name="drawing_number">Drawing Number</string>
+    <string name="received_date">Received Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="download_drawing">Download Drawing</string>
+    <string name="structure_supply">Structure Supply</string>
+    <string name="od535">OD535</string>
     <!--<string name="details_header">Drawing Details</string>-->
     <!--<string name="details_header">Drawing Details</string>-->
 

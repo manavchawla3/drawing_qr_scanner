@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.activities.MainActivity">
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/drawing_details_card"
-        style="@style/Widget.MaterialComponents.CardView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/mtrl_card_spacing"
-        android:layout_marginTop="@dimen/mtrl_card_spacing"
-        android:layout_marginRight="@dimen/mtrl_card_spacing"
-        android:clickable="true"
-        android:focusable="true"
-        android:minHeight="400dp"
-        app:contentPadding="20dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drawing_details_card"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
+        <RelativeLayout
+            android:id="@+id/button_scan_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2A96FF"
+            android:gravity="bottom"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/scan_qr_code"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_scan_qr_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/drawing_details_card"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:text="@string/scan_qr_code"
-        android:textSize="16sp"
-        app:cornerRadius="10dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</RelativeLayout>
+    <!--android:clickable="true"-->
